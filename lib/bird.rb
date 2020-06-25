@@ -19,13 +19,13 @@ class Bird
 
 #a bird knows all its trees
   def trees
-    nests.map do |tree|
-      tree.tree
+    nests.map do |tree_instance|
+      tree_isntance.tree
     end
   end
 
 #a bird can create a nest
-  def create_nest(bird, tree_type)
+  def create_nest(tree)
     Nest.new(self, tree)
   end
 
